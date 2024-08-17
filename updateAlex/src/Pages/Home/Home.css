@@ -1,0 +1,33 @@
+/* .headerStyle{
+    background-image: url('https://trost.codes/social.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headerStyle::before{
+    content: "";
+    background:color-mix(in srgb, var(--background-color), transparent 70%);
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+} */
+
+ .imgHeader{
+    filter: grayscale(100%);
+     -webkit-filter: grayscale(100%);
+     position: relative;
+ }
+ .textHeader{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    color: #dbdcde;
+ }
+ .textHeader:hover{
+    color: #fff;
+ }

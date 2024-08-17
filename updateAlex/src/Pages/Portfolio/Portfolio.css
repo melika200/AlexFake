@@ -1,0 +1,122 @@
+.PortfolioState{
+    padding: 80px 0;
+    position: relative;
+    background-color: black;
+}
+.PortfolioState h2{
+    color: #fff;
+font-size: 45px;
+font-weight: 700;
+text-align: center;
+}
+.PortfolioState p{
+    color: #BBBB;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px auto 30px auto;
+    text-align: center;
+    width: 56%;
+}
+
+.PortfolioState .nav.nav-pills{
+    border-radius: 50px;
+    background-color: rgb(255 255 255/10%);
+    overflow: hidden;
+}
+.PortfolioState .nav.nav-pills .nav-item{
+    width: 33.33333%;
+}
+.PortfolioState .nav.nav-pills .nav-link{
+    background-color: transparent;
+    border-radius: 0;
+    padding: 17px 0;
+    color: #fff;
+    width: 100%;
+    font-size: 17px;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    z-index: 0;
+}
+.PortfolioState .nav.nav-pills .nav-link::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90.21deg,#AA367C -5.91% ,#4A2FBD 111.58%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+}
+.PortfolioState .nav-link.active::before{
+width: 100% !important;
+}
+.PortfolioState .nav.nav-pills .nav-link.active{
+border: 1px solid rgb(255,255,255,1);
+
+
+}
+
+.nav-Link#Portfolio-tabs-tab-first{
+border: 1px solid rgb(255,255,255,0.5);
+border-radius: 55px 0px 0px 55px;
+}
+.nav-Link#Portfolio-tabs-tab-second{
+    border-top:  1px solid rgb(255,255,255,0.5);
+    border-bottom:  1px solid rgb(255,255,255,0.5);
+}
+.nav-Link#Portfolio-tabs-tab-third{
+    border: 1px solid rgb(255,255,255,0.5);
+    border-radius: 0px 55px 55px 0px;
+    }
+.CardImgBx{
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    width: 100%;
+}
+.CardImgBx::before{
+    content: "";
+    background: linear-gradient(90.21deg,#AA367C -5.91%,#4A2FBD 111.58%);
+    opacity: 0.85;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    transition: 0.4s ease-in-out;
+}
+.CardImgBx:hover::before{
+height: 100%;
+}
+.CardImgBx:hover .CardTxTx{
+    top: 50%;
+    opacity: 1;
+}
+.CardTxTx{
+position: absolute;
+text-align: center;
+top: 65%;
+left:49%;
+transform: translate(-50%,-50%);
+transition:  0.5s ease-in-out;
+opacity: 0;
+width: 100%;
+}
+.CardTxTx h4{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1.1em;
+}
+.CardTxTx span{
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.8px;
+}
+
+
